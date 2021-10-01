@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+body{
+    scroll-behavior: smooth;
+    /* background:black; */
+
+}
+
+#navbar{
+    /* position:fixed; */
+    background-color:  rgb(214, 20, 85);
+    height: 70px;
+    /* background-color: rgb(8, 0, 0); */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  
+}
+#logo{
+    width:40%;
+    color:white;
+    
+    
+
+}
+#logo a{
+    font-family:'Roboto', sans-serif ;
+    text-decoration: none;
+    color: azure;
+    font-size: x-large;
+    margin-left: 23px;
+    /* font-weight:bold; */
+}
+
+
+#menu{
+    position: sticky;
+    
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    margin-left: 300px;
+    
+
+   
+    width: 70%;
+}
+#menu a{
+    /* background-color: black; */
+    border-radius: 20px;
+    margin-right: 20px;
+    
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    color: white;
+    /* font-weight: bold; */
+    /* text-transform: uppercase; */
+    /* background-color: brown; */
+    font-size: 15px;
+    padding: 9px 18px;
+
+    /* border-radius: 0px; */
+}
+
+#menu :hover{
+    /* background-color: white; */
+    /* color: rgb(211, 26, 26); */
+    background-color: white;
+    color: rgb(214, 20, 85);
+}
+
+
+
+/* Home Page */
+#home{
+    background: rgb(24, 23, 23);
+    
+    
+    display: flex;
+    
+  
+    
+    align-items: center;
+    justify-content: center;
+    /* flex-wrap: nowrap; */
+    width: 100%;
+    height: 539px;
+    /* background: url('pexels-adrien-olichon-3137078.jpg') no-repeat center; */
+    background-size: 1279px;
+    /* padding-left: 100px; */
+ 
+
+    
+}
+#home div{
+
+    margin-bottom: 30px;
+    font-size: x-large;
+    letter-spacing: 3px;
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: 'Lato', sans-serif;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center ;    
+
+}
+#name{
+   
+  font-size: 34px;
+}
+
+
+#home div *{
+
+    padding-bottom: 10px;
+    /* padding-bottom: 34px;
+    margin-bottom: 00px; */
+    /* font-size: xx-large; */
+}
+#btn{
+    
+    margin-top: 10px;
+    cursor: pointer;
+    letter-spacing: 2px;
+    font: weight 20px;
+    border-radius: 10px;
+    border: 2px solid rgb(214, 20, 85);
+    font-size:15px;
+    padding: 12px 17px 0px 17px;
+    height: 45px;
+    background-color:rgb(214, 20, 85);
+}
+#btn a{
+    text-decoration: none;
+    color: white;
+}
+
+
+#btn:hover{
+    background-color:rgb(24, 23, 23) ;
+    
+}
+
+
+#lorem{
+    width: 400px;
+    font-size: x-small;
+}
+
+.fa-download{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* About me  */
+
+#about{
+    height:550px;
+}
+.container{
+    display: flex;
+}
+
+.img-container img{
+    border-radius: 15px;
+
+    margin-left: 170px;
+    /* width: 70%; */
+    width: 320px;
+}
+
+.about-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 100px;
+    width: 40%;
+    margin-bottom: 89px;
+}
+#about h1{
+    font-family: 'Roboto', sans-serif;
+    color: rgb(214, 20, 85);
+    font-size: xx-large;
+    margin: 60px 50px;
+    display: flex;
+    justify-content: center;
+    
+}
+.about-container p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    letter-spacing: 2px;
+    
+
+}
+.about-container a{
+    border:2px solid rgb(214, 20, 85);
+
+    background-color: rgb(214, 20, 85);
+    color: white;
+    padding: 10px 20px;
+    font-size: large;
+    letter-spacing: 2px;
+    text-decoration: none;
+    border-radius: 9px;
+    margin-right: 376px;
+    margin-top: 20px;
+}
+
+.about-container a:hover{
+    background-color: white;
+    color:rgb(214, 20, 85);
+}
+
+
+
+
+
+.about-container h2{
+
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    font-size: 27px;
+    margin-bottom: 25px;
+    padding-right: 60px;
+    
+
+}
+
+
+
+
