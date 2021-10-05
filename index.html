@@ -9,7 +9,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://cdn.boomcdn.com/libs/owl-carousel/2.3.4/owl.carousel.min.js"></script>
+
+       
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+
     <title>Portfolio Website</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -31,7 +38,7 @@
 
     <section id="home">
         <div>
-            <p id="name">Hello, I'm <span style="color: rgb(214, 20, 85);">Sarvesh Mungurwadi</span></p>
+            <p id="name">Hello, I'm <span class="typed" style="color: rgb(214, 20, 85);">Sarvesh Mungurwadi</span></p>
             <p>I'm a full stack web developer </p>
             <p id="lorem">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, corrupti error doloribus
                 maiores necessitatibus enim dolorum possimus obcaecati quia sunt. Esse necessitatibus quo rem. Repellat
@@ -44,7 +51,7 @@
         <h1>About Me</h1>
         <div class="container">
             <div class="img-container">
-                <img src="Profile.jpg" alt="">
+                <img src="images/Profile.jpg" alt="">
             </div>
             <div class="about-container">
                 <h2>I'm Sarvesh and I'm a <span style="color:rgb(214, 20, 85);">web developer</span></h2>
@@ -61,6 +68,41 @@
     </section>
     <section id="project">
         <h1>Projects</h1>
+        <div class="slider owl-carousel">
+            <div class="card">
+                <div class="img"><img src="images/Todo.PNG" alt=""></div>
+                <div class="content">
+                    <div class="title">Todo List </div>
+                    <p>This is an todo list web app built using HTML,CSS and Javascript</p>
+                    <div class="btn">
+                        <a href="https://sarveshmungurwadi.github.io/MyTodoList.github.io/" target="_blank"><button>Project Link</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img"><img src="images/Notetaking.PNG" alt=""></div>
+                <div class="content">
+                    <div class="title">Notetaking Webapp</div>
+                    <p>A Notetaking Webapp used to take notes.It is built using HTML,CSS and Javascript</p>
+                    <div class="btn">
+                        <a href="https://sarveshmungurwadi.github.io/NoteTakingApp.github.io/" target="_blank"><button>Project Link</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img"><img src="images/food.PNG" alt=""></div>
+                <div class="content">
+                    <div class="title">Food ordering Website</div>
+                    <p>A food ordering webite built using HTML,CSS and Javascript</p>
+                    <div class="btn">
+                        <a href="https://sarveshmungurwadi.github.io/FoodOrderingWebsite.github.io/" target="_blank"><button>Project Link</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
 
     </section>
 
@@ -69,22 +111,26 @@
         <div class="contactcontainer">
             <div id="inputvalue">
                 <h2>Get In Touch</h2>
-                <input type="Name" placeholder=" Name">
-                <input type="email" placeholder=" Email">
-                <textarea name="" id="message" cols="59" rows="10" placeholder="Message"></textarea>
-                <button type="submit">Send Email</button>
-                
+                <form action="">
+                    <input id="nam" type="Name" placeholder=" Name">
+                    <input id="email" type="email" placeholder=" Email">
+                    <textarea name="" id="message" cols="59" rows="10" placeholder="Message"></textarea>
+                    <button id="bt" type="submit">Send Email</button>
+                </form>
+
+
 
             </div>
 
             <div id="social">
                 <!-- <h2>Get In Touch Online</h2> -->
                 <a href="https://github.com/SarveshMungurwadi" target="_blank"><i class="fa fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/sarvesh-mungurwadi-74b8b019a/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                <a href="https://www.linkedin.com/in/sarvesh-mungurwadi-74b8b019a/" target="_blank"><i
+                        class="fa fa-linkedin"></i></a>
                 <a href=""><i class="fa fa-twitter"></i></a>
 
-        
-                
+
+
 
             </div>
         </div>
@@ -94,10 +140,22 @@
     </section>
 
     <footer>
-        <p>hello</p>
+        <p>Created by Sarvesh | &copy; 2021 All rights are reserved</p>
     </footer>
 
 
+
+
+
+
+    <script>
+        $(".slider").owlCarousel({
+            loop: true,
+            autoplay:false,
+            autoplayTimeout: 2000,
+            autoplayHoverpause:true
+        })
+    </script>
 
 </body>
 
