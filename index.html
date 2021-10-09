@@ -20,7 +20,7 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
 
-    <title>Portfolio Website</title>, 
+    <title>Portfolio Website</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -118,8 +118,8 @@
             <div id="inputvalue">
                 <h2>Get In Touch</h2>
                 <!-- <p>Send a message and we will get back to you within 24 hours.</p> -->
-                <form  action="javascript:sendMail()" method="POST">
-                    <input id="Name" type="Name" placeholder=" Name">
+                <form action="javascript:sendMail()" class="contact-form" method="POST">
+                    <input id="Name" class="my"  type="Name" placeholder=" Name">
                     <input id="email" type="email" placeholder=" Email">
                     <textarea name="" id="message" cols="59" rows="10" placeholder="Message"></textarea>
                     <button id="bt" type="submit">Send Email</button>
@@ -152,9 +152,11 @@
 
 
 
-    
+
 
     <script>
+        
+        
         //For project section carousel
         $(".slider").owlCarousel({
             loop: true,
@@ -166,30 +168,44 @@
 
         //For contact section sending mail
 
-        function sendMail(){
-            var name=$("#Name").val();
-            var email=$("#email").val();
-            var message=$("#message").val();
+        function sendMail() {
+            var name = $("#Name").val();
+            var email = $("#email").val();
+            var message = $("#message").val();
 
-            var Body="Name: "+name+"<br>Email: "+"<br>Message: "+message;
-            
-        
-        Email.send({
-            Host: "smtp.gmail.com",
-            Username: "sarveshmungurwadi24@gmail.com",
-            Password: "Sarvesh@2001",
-            To: 'sarveshmungurwadi12@gmail.com',
-            From: "sarveshmungurwadi24@gmail.com",
-            Subject: "New mail on contact Form:"+name,
-            Body: Body
-        }).then(
-            message =>alert(message)
-              
-            
-        );
+            var Body = "Name: " + name + "<br>Email: " + email+"<br>Message: " + message;
+
+
+
+            Email.send({
+                SecureToken:"50e2f3bf-3750-4bdf-bfac-868dd2f80097",
+                To: 'sarveshmungurwadi12@gmail.com',
+                From: email,
+                Subject: "Message from Contact us:",
+                Body: Body
+            }).then(
+                message => {
+                    if(message=="OK")
+                    {
+                        alert("Thank u message sent");
+                    }
+                    else{
+                        alert("Error while sending message");
+                    }
+                }
+            );
+            document.getElementById("Name").value = '';
+            document.getElementById("email").value = '';
+            document.getElementById("message").value = '';
+
+
         }
+
+        
     </script>
 
 </body>
 
 </html>
+
+
