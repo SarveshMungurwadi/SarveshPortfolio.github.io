@@ -50,7 +50,7 @@ body{
 }
 #menu a{
     /* background-color: black; */
-    border-radius: 20px;
+    /* border-radius: 20px; */
     margin-right: 20px;
     
     font-family: 'Roboto', sans-serif;
@@ -66,12 +66,16 @@ body{
 }
 
 #menu :hover{
-    /* background-color: white; */
-    /* color: rgb(211, 26, 26); */
-    background-color: white;
-    color: rgb(214, 20, 85);
-}
+    
+    /* background-color: white;
+    color: rgb(214, 20, 85); */
+    animation-name:mymove;
 
+    
+
+   
+}
+ 
 
 
 /* Home Page */
@@ -142,9 +146,13 @@ body{
 
 
 #btn:hover{
-    background-color:rgb(24, 23, 23) ;
+    background-color:rgb(24, 23, 23);
+    
+
     
 }
+ 
+
 
 
 #lorem{
@@ -287,7 +295,7 @@ body{
 }
 
 #inputvalue{
-    margin-right: 300px;
+    margin-right: 10px;
     
     display: flex;
     flex-direction: column;
@@ -310,12 +318,10 @@ body{
 }
 
 form{
-    position: absolute;
-    bottom: -1779px;
-    left: 165px;
+   margin-left: 130px;
 }
 #message{
-    margin-right:140px;
+    margin-right:100px;
     padding:10px 15px;
     padding-top: 9px;
     resize: none;
@@ -338,7 +344,7 @@ form{
     height: 45px;
     background-color:rgb(214, 20, 85);
     color: white;
-    margin-right: 490px;
+    margin-right: 430px;
 
 }
 #inputvalue button:hover{
@@ -351,7 +357,7 @@ form{
     font-family: 'Roboto', sans-serif;
     color: rgb(14, 13, 13);
     font-size: xx-large;
-    margin-right :449px; 
+    margin-right :360px; 
 
 }
 
@@ -371,21 +377,28 @@ form{
 } */
 
 #social{
-    position: absolute;
-    right: 20px;
-    bottom: -1550px;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
     /* top: 1px; */
 }
 #social a{
     /* width: 300px; */
     font-size: 50px;
-    letter-spacing: 90px;
+    /* letter-spacing: 90px; */
     color:rgb(214, 20, 85);
+    margin-bottom: 60px;
+    
     
 
 }
+
+#social .fa{
+    padding-right:110px;
+}
 #social a:hover{
-    font-size:52px;
+    /* font-size:52px; */
+    color:rgb(250, 9, 89);
 }
 
 footer{
@@ -477,3 +490,212 @@ footer p{
     color:  rgb(214, 20, 85);
 
 }
+
+
+
+
+
+/* Responsive css */
+
+@media (max-width:986px) {
+    .img-container img{
+        margin-left: 100px;
+    }
+    .about-container{
+        margin: 0px 0px 80px 90px;
+    }
+    .about-container h2{
+        padding-right:0px;
+
+    }
+    .about-container a{
+        margin: 20px 270px 0px 0px;
+    }
+    
+}
+
+@media (min-width:1003px) {
+    .about-container a{
+        margin: 20px 270px 0px 0px;
+    }
+
+}
+@media (min-width:994px) and (max-width:1251px){
+    .about-container a{
+        margin: 20px 270px 0px 0px;
+    }
+
+}
+@media (min-width:1024px) and (max-width:1248px){
+    .about-container a{
+        margin: 20px 290px 0px 0px;
+    }
+
+}
+@media (min-width:1269px){
+    .about-container a{
+        margin: 20px 387px 0px 0px;
+    }
+
+}
+@media (min-width:989px) and (max-width:992px){
+    .about-container a{
+        margin: 20px 290px 0px 0px;
+    }
+
+}
+@media (max-width:850px){
+    
+.img-container img{
+    width: 200px;
+    
+}
+.container{
+    padding-left: 90px;
+    width: 60%;
+}
+.about-container a{
+    margin: 20px 30px 0px 0px;
+}
+
+.about-container p{
+    font-size: 12px;
+}
+.about-container h2{
+    font-size: 20px;
+}
+}
+
+
+@media (max-width:826px)
+{
+    #menu{
+        margin-left: 200px;
+    }
+    #about{
+        text-align: center;
+    }
+    .img-container img{
+        width: 150px;
+    }
+
+    .content p{
+        font-size: 10px;
+
+    }
+    .card .content .title{
+        font-size: 13px;
+    }
+    .container{
+
+        text-align: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .about-container p{
+        width: 350px;
+    }
+    .about-container h2{
+        width: 350px;
+    }
+
+    
+}
+
+
+@media (max-width:600px) {
+    .about-container p{
+        font-size: 10px;
+        
+    }
+    .about-container h2{
+        font-size: 18px;
+    }
+    .container{
+        padding-left: 23px;
+    }
+    
+}
+
+
+    
+@media (max-width:475px){
+    .slider .card{
+        background:#fff;
+        flex: 1;
+        margin: 0 10px;
+        height: 250px;
+    }
+    
+    .slider .card .img{
+        height: 150px;
+        width: 100%;
+    }
+    
+    .slider .card .img img{
+        height: 150px;
+        
+    
+        object-fit: cover;
+    }
+    .card .content .btn button{
+        width: 60px;
+        height: 25px;
+        font-size: 8px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    .card .content .title {
+        font-size: 10px;
+    }
+    .content p{
+        font-size: 7px;
+    }
+
+        
+}
+
+@media (max-width:448px){
+    .slider .card{
+        background:#fff;
+        flex: 1;
+        margin: 0 10px;
+        height: 200px;
+    }
+    
+    .slider .card .img{
+        height: 100px;
+        width: 100%;
+    }
+    
+    .slider .card .img img{
+        height: 100px;
+        
+    
+        object-fit: cover;
+    }
+    .card .content .btn button{
+        width: 60px;
+        height: 25px;
+        font-size: 8px;
+        padding-top: 0px;
+    }
+
+}
+
+
+
+@media (max-width:1230) {
+    #inputvalue h2{
+        margin-right: 100px;
+    }
+    
+}
+ 
+
+
+
+/* #contact{
+    display: none;
+}  */
