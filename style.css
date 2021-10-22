@@ -686,12 +686,229 @@ footer p{
 
 
 
-@media (max-width:1230) {
+@media (max-width:1230px) {
     #inputvalue h2{
         margin-right: 100px;
     }
+  
     
 }
+
+@media (max-width:1210px){
+
+    form {
+        width: 80%;
+        margin-left: 40px;
+    }
+    #inputvalue input{
+        margin-right: 50px;
+    }
+    #social{
+        width: 50%;
+    }
+   
+    #social .fa{
+        padding-right: 70px;
+        font-size: 45px;
+        
+    }
+}
+
+@media (max-width:1012px){
+    #inputvalue input{
+        width: 400px;
+    }
+    #message{
+        width:400px;
+    }
+
+}
+
+@media(max-width:910px){
+    #social .fa{
+        padding-right: 50px;   
+    }
+    #inputvalue button{
+        margin-right: 355px;
+    }
+    #inputvalue{
+        margin-right: 0px;
+    }
+
+}
+
+@media(max-width:842px)
+{
+    #contact{
+        height: 800px;
+
+    }
+    #inputvalue h2{
+        margin-right: 10px;
+    }
+    .contactcontainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    #inputvalue{
+        align-items: center;
+        justify-content: center;
+    }
+    #inputvalue input{
+        margin-right: 0px;
+    }
+    #message{
+        margin-right: 0px;
+        
+    }
+    form{
+        margin-left: 0px;
+        width: 50%;
+    }
+    #inputvalue button{
+        margin-right: 200px;
+        padding: 0px 13px 0px 13px;
+        height: 40px;
+    }
+    #social{
+        margin-top: 100px;
+        width: 100%;
+        
+    }
+    #social a{
+        width: 200px;
+    }
+    #social .fa{
+        padding-left: 90px;
+    }
+}
+
+@media(max-width:700px)
+{
+    #inputvalue input{
+        width: 370px;
+
+    }
+    #message{
+        width: 370px;
+        
+    }
+    #inputvalue button{
+        margin-right: 100px;
+    }
+
+}
+@media(max-width:566px)
+{
+    #inputvalue input{
+        width: 320px;
+
+    }
+    #message{
+        width: 320px;
+        
+    }
+    #inputvalue button{
+        margin-right: 100px;
+    }
+
+}
+@media(max-width:504px)
+{
+    #inputvalue input{
+        width: 250px;
+
+    }
+    #message{
+        width: 250px;
+        
+    }
+    #social .fa{
+        padding-left:70px;
+    }
+    #inputvalue button{
+        margin-right: 100px;
+    }
+
+}
+
+@media(max-width:400px)
+{
+    #inputvalue input{
+        width: 220px;
+
+    }
+    #message{
+        width: 220px;
+        
+    }
+    #social .fa{
+        padding-left:60px;
+    }
+
+}
+
+
+@media(max-width:720px){
+    #name{
+        font-size: 29px;
+    }
+    #work{
+        font-size: 22px;
+    }
+    #lorem{
+        width: 370px;
+        font-size: 9px;
+    }
+    #home button{
+        padding:2px 8px 4px 8px;
+    }
+}
+@media(max-width:605px){
+    #name{
+        font-size: 24px;
+    }
+    #work{
+        font-size: 17px;
+    }
+    #lorem{
+        width: 310px;
+        font-size: 5px;
+    }
+    #home button{
+        padding:0px 8px 0px 8px;
+        height: 40px;
+    }
+    #btn a{
+        font-size: 12px;
+        margin:0px;
+    }
+}
+
+@media(max-width:451px){
+    #name{
+        font-size: 20px;
+    }
+    #work{
+        font-size: 13px;
+    }
+    #lorem{
+        width: 260px;
+        font-size: 5px;
+    }
+    #home button{
+        padding:2px 8px 4px 8px;
+    }
+    #home button{
+        padding:0px 8px 0px 8px;
+        height: 35px;
+    }
+}
+
+
  
 
 
